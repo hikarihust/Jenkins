@@ -1,0 +1,5 @@
+#!/bin/bash
+ssh -T -i /home/jenkins/web-server.pem www-user@18.218.106.217 << EOF
+cd /var/www/html/web
+git pull
+EOF

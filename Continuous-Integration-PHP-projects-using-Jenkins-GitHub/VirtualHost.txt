@@ -1,0 +1,11 @@
+NameVirtualHost *:81
+
+<VirtualHost *:81>
+    DocumentRoot /var/www/html/web
+    <Directory "/var/www/html/web">      
+    Order deny,allow
+        Allow from all
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>

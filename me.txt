@@ -15,4 +15,5 @@ install Jenkins on AWS EC2 Linux
         systemctl start jenkins 
     username: admin 
     password: 12345678
+Continuous Integration for PHP projects using Jenkins/GitHub
     
