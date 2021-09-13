@@ -1,0 +1,18 @@
+install Jenkins on AWS EC2 Linux
+    Java installation
+        yum install java-1.8.0-openjdk-devel.x86_64
+    Check Java version
+        alternatives --config java 
+        java -version 
+    Jenkins install
+        wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+        rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+        yum install -y jenkins
+    Fix Error Package: jenkins-2.307-1.1.noarch
+        amazon-linux-extras install epel -y
+        yum install -y jenkins
+    Start Jenkins
+        systemctl start jenkins 
+    username: admin 
+    password: 12345678
+    
