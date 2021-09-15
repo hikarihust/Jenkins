@@ -16,4 +16,6 @@ install Jenkins on AWS EC2 Linux
     username: admin 
     password: 12345678
 Continuous Integration for PHP projects using Jenkins/GitHub
+Continuous Integration for PHP projects using Jenkins/GitLab
+    Jenkins CI/CD thì phải xây dựng từng task nhỏ lẻ còn Pineline CI/CD thì có thể viết chung 1 kịch bản để chạy 1 lượt
     
