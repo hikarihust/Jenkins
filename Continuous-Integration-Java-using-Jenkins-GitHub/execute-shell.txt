@@ -1,0 +1,7 @@
+scp -i /home/jenkins/web-server.pem /var/lib/jenkins/workspace/jenkins-java/target/sparkjava-hello-world-1.0.war www-user@18.218.106.217:/var/lib/tomcat/webapps/
+#!/bin/bash
+ssh -T -i /home/jenkins/web-server.pem www-user@18.218.106.217 << EOF
+sudo rm -Rf /var/lib/tomcat/webapps/sparkjava-hello-world-1.0
+sudo service tomcat stop
+sudo service tomcat start
+EOF
